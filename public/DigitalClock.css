@@ -4,13 +4,14 @@
 }
 
 body {
+    margin: 0;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font: bold 12px Arial, Helvetica, sans-serif;
+    /* background-image: url('images/Bg_image.jpg'); */
     background-color: black;
-    background-image: url('my-app/public/images/Bg_image.jpg'); /* Replace with the correct path to your background image */
     background-size: cover;
     background-position: center;
 }
@@ -20,7 +21,7 @@ body {
     color: white;
     padding: 40px;
     border-radius: 10px;
-    background-color: rgba(34, 34, 34, 0.8); /* Semi-transparent background for readability */
+    background-color: rgba(34, 34, 34, 0.8);
 }
 
 #date {
@@ -32,6 +33,5 @@ body {
     list-style: none;
     display: flex;
     font-size: 90px;
-    gap: 15px;
-    
+    gap: 15px;  
 }
