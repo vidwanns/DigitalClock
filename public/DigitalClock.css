@@ -10,7 +10,7 @@ body {
     align-items: center;
     justify-content: center;
     font: bold 12px Arial, Helvetica, sans-serif;
-    /* background-image: url('images/Bg_image.jpg'); */
+    background-image: url('images/Bg_image.jpg');
     background-color: black;
     background-size: cover;
     background-position: center;
@@ -18,7 +18,6 @@ body {
 
 .clock {
     border: 1px solid #606060;
-    color: white;
     padding: 40px;
     border-radius: 10px;
     background-color: rgba(34, 34, 34, 0.8);
@@ -27,11 +26,76 @@ body {
 #date {
     font-size: 20px !important;
     text-align: center;
+    color: grey;
 }
 
 .clock ul {
     list-style: none;
     display: flex;
-    font-size: 90px;
     gap: 15px;  
+}
+
+.time-12-hour {
+    font-size: 90px;
+    color: grey;
+}
+
+.time-24-hour {
+    margin-top: 10px;
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    color: grey;
+}
+
+#ampm {
+    margin-top: 45px;
+    font-size: 0.5em;  /* Make AM/PM half the size of the time */
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .clock {
+        padding: 20px;
+    }
+    #date {
+        font-size: 18px;
+    }
+    .clock ul {
+        gap: 10px;
+    }
+    .time-12-hour {
+        font-size: 60px;
+    }
+    .time-24-hour {
+        font-size: 30px;
+        gap: 5px;
+    }
+    #ampm {
+        font-size: 0.5em;  /* Keep AM/PM half the size of the time */
+    }
+}
+
+@media (max-width: 480px) {
+    .clock {
+        padding: 10px;
+    }
+    #date {
+        font-size: 16px;
+    }
+    .clock ul {
+        gap: 5px;
+    }
+    .time-12-hour {
+        font-size: 40px;
+    }
+    .time-24-hour {
+        font-size: 20px;
+        gap: 2px;
+    }
+    #ampm {
+        font-size: 0.5em;  /* Keep AM/PM half the size of the time */
+    }
 }

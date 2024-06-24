@@ -2,15 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DigitalClock</title>
     <link rel="stylesheet" href="DigitalClock.css"> <!-- Make sure this path is correct -->
 </head>
-<body style="background: url(images/Bg_image.jpg);">
+<body>
     <div class="container">
         <div class="clock">
             <div id="date">Saturday 22 June 2024</div>
-            <ul>
+            <ul class="time-12-hour">
                 <li id="hours">05</li>
                 <li id="point">:</li>
                 <li id="min">20</li>
@@ -18,6 +19,15 @@
                 <li id="sec">30</li>
                 <li id="ampm">AM</li>
             </ul>
+            <div class="time-24-hour">
+                <ul>
+                    <li id="hours24">05</li>
+                    <li id="point24">:</li>
+                    <li id="min24">20</li>
+                    <li id="point24">:</li>
+                    <li id="sec24">30</li>
+                </ul>
+            </div>
         </div>
     </div>
     <script src="DigitalClock.js"></script>
