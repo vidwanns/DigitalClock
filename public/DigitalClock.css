@@ -1,3 +1,10 @@
+.logo {
+    display: block;
+    margin: 0 auto 20px auto; /* Center the logo and add some bottom margin */
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+}
+
 * {
     margin: 0;
     padding: 0;
