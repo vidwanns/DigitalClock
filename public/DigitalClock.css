@@ -61,7 +61,7 @@ body {
         padding: 20px;
     }
     #date {
-        font-size: 18px;
+        font-size: 12px;
     }
     .clock ul {
         gap: 10px;
@@ -83,7 +83,7 @@ body {
         padding: 10px;
     }
     #date {
-        font-size: 16px;
+        font-size: 12px !important;
     }
     .clock ul {
         gap: 5px;
@@ -97,5 +97,7 @@ body {
     }
     #ampm {
         font-size: 0.5em;  /* Keep AM/PM half the size of the time */
+        margin-top: 20px;
+
     }
 }
